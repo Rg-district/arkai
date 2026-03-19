@@ -11,9 +11,9 @@ const plans = [
     monthlyPrice: 139,
     prices: {
       monthly: { amount: 139, priceId: 'price_1TAd3oEL6yquQGHSFWHuuBOQ', label: '£139/month', sublabel: 'No commitment' },
-      '6month': { amount: 695, priceId: 'price_standard_6month', label: '£695 upfront', sublabel: '6 months (1st month free)' },
-      '12month-monthly': { amount: 111, priceId: 'price_standard_12month_monthly', label: '£111/month', sublabel: '12-month commitment (20% off)' },
-      '12month-annual': { amount: 1334, priceId: 'price_standard_12month_annual', label: '£1,334 upfront', sublabel: '12 months (20% off)' },
+      '6month': { amount: 695, priceId: 'price_1TCQmyCzNCqtkyOxBbVqgpGB', label: '£695 upfront', sublabel: '6 months (1st month free)' },
+      '12month-monthly': { amount: 111, priceId: 'price_1TCQn4CzNCqtkyOxXrIH4Sbj', label: '£111/month', sublabel: '12-month commitment (20% off)' },
+      '12month-annual': { amount: 1334, priceId: 'price_1TCQn9CzNCqtkyOxbJHmn8rN', label: '£1,334 upfront', sublabel: '12 months (20% off)' },
     },
     features: [
       '200 SMS per month',
@@ -33,9 +33,9 @@ const plans = [
     monthlyPrice: 249,
     prices: {
       monthly: { amount: 249, priceId: 'price_1TAd3xEL6yquQGHS7fZdxLD3', label: '£249/month', sublabel: 'No commitment' },
-      '6month': { amount: 1245, priceId: 'price_premium_6month', label: '£1,245 upfront', sublabel: '6 months (1st month free)' },
-      '12month-monthly': { amount: 199, priceId: 'price_premium_12month_monthly', label: '£199/month', sublabel: '12-month commitment (20% off)' },
-      '12month-annual': { amount: 2390, priceId: 'price_premium_12month_annual', label: '£2,390 upfront', sublabel: '12 months (20% off)' },
+      '6month': { amount: 1245, priceId: 'price_1TCQnECzNCqtkyOxNGzS9C3U', label: '£1,245 upfront', sublabel: '6 months (1st month free)' },
+      '12month-monthly': { amount: 199, priceId: 'price_1TCQnJCzNCqtkyOx7B84mUJZ', label: '£199/month', sublabel: '12-month commitment (20% off)' },
+      '12month-annual': { amount: 2390, priceId: 'price_1TCQnOCzNCqtkyOxpTJcSWHC', label: '£2,390 upfront', sublabel: '12 months (20% off)' },
     },
     popular: true,
     features: [
