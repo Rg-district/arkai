@@ -80,8 +80,8 @@ export default function Home() {
           Automated reviews, booking follow-ups, and social media — set up in a week, running in the background while you focus on the food.
         </p>
         <div style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap' }}>
-          <a href="#contact" style={{ background: '#6366f1', color: '#fff', padding: '16px 32px', borderRadius: 10, textDecoration: 'none', fontWeight: 700, fontSize: 16 }}>
-            Get your free audit
+          <a href="/trial" style={{ background: '#6366f1', color: '#fff', padding: '16px 32px', borderRadius: 10, textDecoration: 'none', fontWeight: 700, fontSize: 16 }}>
+            Start free trial →
           </a>
           <a href="#products" style={{ background: '#111', color: '#f5f5f5', padding: '16px 32px', borderRadius: 10, textDecoration: 'none', fontWeight: 600, fontSize: 16, border: '1px solid #222' }}>
             See how it works
