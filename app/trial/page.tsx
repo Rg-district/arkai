@@ -18,8 +18,16 @@ export default function TrialPage() {
     e.preventDefault();
     setLoading(true);
 
-    // For now, redirect to pricing to select a plan
-    // In production, this would save the lead and start the trial
+    try {
+      await fetch('/api/trial', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      });
+    } catch {
+      // Non-fatal — still proceed to pricing
+    }
+
     router.push(`/pricing?email=${encodeURIComponent(form.email)}&restaurant=${encodeURIComponent(form.restaurantName)}`);
   };
 
