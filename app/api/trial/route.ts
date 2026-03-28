@@ -3,9 +3,16 @@ import { supabaseAdmin } from '@/lib/supabase';
 
 export async function POST(req: NextRequest) {
   try {
-    const { restaurantName, contactName, email, phone, googleUrl } = await req.json();
+    const body = await req.json();
 
-    if (!restaurantName || !contactName || !email || !phone) {
+    // Support both field name formats (old form: restaurantName/contactName, new form: restaurant_name/name)
+    const restaurantName = body.restaurantName || body.restaurant_name;
+    const contactName = body.contactName || body.name;
+    const email = body.email;
+    const phone = body.phone || '';
+    const googleUrl = body.googleUrl || body.google_url || null;
+
+    if (!restaurantName || !contactName || !email) {
       return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
     }
 
@@ -17,8 +24,8 @@ export async function POST(req: NextRequest) {
           name: restaurantName,
           contact_name: contactName,
           email: email.toLowerCase().trim(),
-          phone,
-          google_url: googleUrl || null,
+          phone: phone,
+          google_url: googleUrl,
           status: 'trial',
         },
         { onConflict: 'email' }
