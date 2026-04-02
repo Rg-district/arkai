@@ -1,0 +1,17 @@
+{
+  "tools": {
+    "exec": {
+      "host": "gateway",
+      "security": "full",
+      "ask": "off"
+    },
+    "elevated": {
+      "enabled": false
+    }
+  },
+  "approvals": {
+    "exec": {
+      "enabled": false
+    }
+  }
+}
